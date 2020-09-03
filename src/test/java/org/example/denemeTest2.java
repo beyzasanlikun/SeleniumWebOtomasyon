@@ -47,11 +47,6 @@ public class denemeTest2 {
         String priceText= price.getText();
 
         /*Ürün sayfası açıldıktan sonra ürünün sepete eklenmesi*/
-        /*WebElement quantityBox = driver.findElement(By.className(""));
-        quantityBox.click();
-        quantityBox.clear();
-        quantityBox.sendKeys("1");*/
-
         WebElement basketBtn = driver.findElement(By.className("add-to-bs-tx"));
         basketBtn.click();
         driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
@@ -60,7 +55,7 @@ public class denemeTest2 {
         /* Ürünün fiyatı ile sepetteki ürünün fiyatının karşılaştırılması */
         WebElement priceBasket= driver.findElement(By.className("pb-basket-item-price"));
         String priceText2= priceBasket.getText();
-       // if(priceText.compareTo(priceText2)>0) {
+
 
             /* Sepetteki ürün adedinin arttırılması */
             WebElement quantityBasket = driver.findElement(By.xpath("//*[@id=\"partial-basket\"]/div/div[3]/div[2]/div[3]/div[1]/div/input"));
@@ -68,9 +63,8 @@ public class denemeTest2 {
             quantityBasket.clear();
             quantityBasket.sendKeys("1");
             driver.findElement(By.xpath("//*[@id=\"partial-basket\"]/div/div[3]/div[2]/div[3]/div[1]/div/button[2]")).click();
-        //}
+
         driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
-        //driver.findElement(By.className("i-trash")).click();
         driver.findElement(By.xpath("//*[@id=\"partial-basket\"]/div/div[3]/div[2]/div[3]/button")).click();
     }
 
