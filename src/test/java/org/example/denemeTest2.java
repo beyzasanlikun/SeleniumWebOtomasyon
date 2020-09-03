@@ -33,8 +33,7 @@ public class denemeTest2 {
          /*Bu kısım normalde searchBox'a Bilgisayar yazıp ürün araması yapılan kısımdı.
            Ama "is not clickable" hatası aldığım için kodlarımı yorum satırı yaptım.
             Bilgisayar filtrelemesini kendim yazarak yapıyorum ve o kısmın testini yapamadım.
-            searchBox'a klavyeden 'bilgisayar' yazdıktan sonra geri kalan testler çalışıyor.
-          */
+            searchBox'a klavyeden 'bilgisayar' yazdıktan sonra geri kalan testler çalışıyor. */
         //WebElement searchBox = driver.findElement(By.xpath("/html/body/div[2]/div[1]/div/div[2]/div/div[2]/div/div/div/input"));
         //searchBox.click();
        // searchBox.sendKeys("Bilgisayar");
